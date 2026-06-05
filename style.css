@@ -33,7 +33,6 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-columns: 0.6fr 2fr;
-    background: blue;
 }
 
 .sidebar{

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: "robot";
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: "robot" ,sans-serif; 
+}
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: blue;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    background-color: aquamarine;
+
+}
+.main{
+    grid-column: 2/3;
+    background-color: brown;
+}
+

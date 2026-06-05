@@ -68,22 +68,22 @@ body{
     padding-top: 38px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
-
-}
-.side-items img{
-    height: 30px;
-    padding-left: 40px;
+    gap: 15px;
 }
 .item{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+}   
+
+.side-items img{    
+    height: 25px;
+    padding-left: 30px;
 }
+
 .item p{
     font-family: "robot",sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
 
 }
 .contact{

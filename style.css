@@ -26,21 +26,23 @@
 
 body{
     margin: 0;
+    overflow: hidden;
     font-family: "robot" ,sans-serif; 
 }
 
 .container{
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 0.6fr 2fr;
+    grid-template-columns: 0.2fr 1fr;
 }
 
 .sidebar{
-    display: grid;
+    /* display: grid;
     grid-column: 1/2;
     background-color: #1992d4;
     grid-auto-columns: 1;
-    grid-template-rows: auto 1fr 1fr; 
+    grid-template-rows: auto 1fr 1fr;  */
+    
 }
 
 /* side bar nav */
@@ -53,14 +55,14 @@ body{
 }
 
 .logo{
-    height: 50px;
+    height: 43px;
     padding-left: 30px;
     
 }
 
 .nav h2{
     font-family: "robot",sans-serif;
-    font-size: 2.4em;
+    font-size: 2em;
     padding-right: 38px;
     padding-top: 3px;
 }
@@ -71,6 +73,10 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.side-items > div:hover{
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(1px);
 }
 .item{
     display: flex;
@@ -94,6 +100,10 @@ body{
     gap: 15px;
     
 }
+.contact >div:hover{
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(1px);
+}
 /* contact elemnts */
 .item-2{
     display: flex;
@@ -114,7 +124,7 @@ body{
 .main{
     background-color: #e2e8f0;
     display: grid;
-    grid-template-rows: 0.8fr 3fr;
+    grid-template-rows: auto 1fr;
 }
 
 .main-nav{
@@ -197,6 +207,7 @@ input:hover{
     border-radius: 20px;
 }
 
+
 .pfp2{
     height: 80px;
     border-radius: 100%;
@@ -219,4 +230,74 @@ input:hover{
     gap: 4px;
     margin-left: 30px;
     padding-top: 15px;
+}
+
+
+.projects{
+    display: grid;
+    grid-template-columns: 2fr auto;
+}
+
+.left-section{
+    background-color: #0f172a;
+}
+
+.right-section{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.annouc{
+    width: 80%;
+    border: 0px solid black;
+    border-radius: 10px;
+    background: white;
+}
+.annouc h2{
+    text-align: center;
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trend{
+    width: 80%;
+    border: 0px solid black;
+    border-radius: 10px;
+    background: white;
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.usr{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+.usr p{
+    font-weight: 450;
+    padding-left: 20px;
+}
+.usr-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.usr-pfp{
+    height: 40px;
+    border-radius: 20px;
 }
